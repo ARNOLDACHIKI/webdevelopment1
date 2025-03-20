@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Registration</title>
+</head>
+<body bgcolor="Teal">
+<h1 align ="center"><p>     Students' Regitration Form</p></h1>
+    <p>    All the Students must register using the <b><font  face="Arial" size="5" color="Navy">  online form </font></b>provided below</p>    
+    
+    
+   <tr>
+    <td>
+        <!--form fields
+        1.text-box=takes one line of data(<input type="text">)
+        2.password
+        3. checkbox
+        checked
+        4.Radio button
+        
+        
+        
+        list box/drop down list
+        multiline text box
+        command buttons=reset-clear the content and take the form to its default
+        form ta attributes
+                name for identification
+                Action-specifies the backend script that processes the data
+                method-specifies how the data is uploaded(post/get)
+                enctype-  to be used to secure data during its movement  to the server(encryption type)
+        
+        
+        -->
+        
+        
+        <label > <tr><td>  Student Name: </td><td> </label><input type="text" value="Your Name!" size="50" Name="identifier" ></td></tr>
+        <br>
+        <label><tr><td>Password : </td><td> </label><input  type="password" value="0000" size="50"></td></tr>
+        <br>
+        <label>Email :        </label><input type="email" size="30">
+        
+        <br>
+        <label>Courses Taken: </label>
+        <br>
+        <input type="checkbox" Name="Courses" value="OS">Operating Systems
+        <br>
+        <input type="checkbox" Name="Courses" value="SAD">System Analysis and Design 
+        <br>
+        <input type="checkbox" Name="Courses" value="OOP">Object Oriented Programming
+        <br>
+        <input type="checkbox" Name="Courses" value="AI"  checked>Artificial Intelligence
+        
+        <br>
+        <label>Gender :</label>
+        <br>
+        <input type="Radio" Name="Gender" value="M">Male
+        <br>
+        <input type="Radio" Name="Gender" value="F" checked>Female
+        <br>
+        <select size="4"  multiple>
+            <option value="BCS">Computer Science</option>
+            <option value="BSE">Software Engineering </option>
+            <option value="CT"> Computer Technology</option>
+            <option value="MCS" selected >Mathematics and Computer science</option>
+            <option value="BIT">Business and Information Technology</option>
+            <option value="IT">Information Technology</option>
+        </select>
+        <br>
+        <TextArea row="10" cols="50" >Text Here!!</TextArea>
+        <br>
+        <input type="reset" value="Reset Data">
+        <br>
+        <input type="Button" value="Send Form">
+        </form>
+   </table>
+
+</body>
