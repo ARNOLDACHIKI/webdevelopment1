@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+</head>
+<body style="background-color:  white; font-family: Arial, sans-serif;">
+        <h1 style="font-size: 24px;">FEEDBACK</h1>
+        <p><a href="feedback.html" style="color: yellow;">(feedback.html)</a></p>
+        <p>Enter Patient's Details and <b>and</b> Your Message Below</p>
+        
+       <table border="1">
+        <form>
+            <label for="title" >Title*<br></label>
+            <select id="title" required >
+                <option>Mr.</option>
+                <option>Mrs.</option>
+                <option>Miss</option>
+                <option>Dr.</option>
+            </select>
+            <center><label>Gender</label>
+                <input type="radio" name="gender" id="male"> Male
+                <input type="radio" name="gender" id="female"> Female
+           <br>
+            
+            <label for="surname" >Surname*</label>
+            <input type="text" id="surname" required >
+            <br >
+            
+            <label for="bed-no" >Bed No.</label>
+            <input type="text" id="bed-no" ></center>
+            <br>
+            <label for="first-name" >First Name*</label>
+            <input type="text" id="first-name" required >
+            <br>
+            
+            <label for="ward" >Ward</label>
+            <input type="text" id="ward" >
+            <br>
+            
+            <label for="message" >Your Message</label>
+            <textarea id="message" rows="5" ></textarea>
+            <br>
+            
+            <label for="email" >Your Email*</label>
+            <input type="email" id="email" required >
+            <br>
+            
+                
+            
+        </form>
+       </table>
+        <button type="submit" >Send Your Message</button>
+
+</body>
+</html>
+<!--- 
+cascading style sheets(css)
+-----------------------------
+to make the page load faster
+(1)inline -where you add the style as part of the tag as an attribute of the tag.it works only in that tag
+    eg <h1 style="Background-color=white"
+(2)Internal css -you set some location within the html where you want to place the css takes place in the head
+   eg
+
+21   <html>
+     <head>
+        <hl>........</hl>
+      <style type="text/css">
+        <style>
+
+
+(3)External css -save the css file with the extention .css in the same location as html and then include it onto your page  by using the tag 
+                <link rel="stylesheet" type="text/css" href="styles.css">
+
+
+                css syntax
+                -----------
+        selector{property1:value1;property2:value3;....valuen;
+
+        eg 
+        p{color:green;font-size:18px:background-color:Navy;
+        }
+        
+        }
+
+        types of selectors
+    (1)Tag selector-eg p
+
+
+    other selctors are based on their attributes
+    (2)ID selctor-applies css on a sepicic location using the id 
+    <p id =bcs>
+    <p id =bse>
+        #bcs{color:green ;font size :18px;background-color
+    
+        }
+
+-->
